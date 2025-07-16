@@ -1,19 +1,28 @@
 .header {
     display: grid;
     grid-template-rows: 1fr 2fr;
+    min-height:0;
 }
 
 .nav {
+    grid-row: 1 / 2;
     display: flex;
     justify-content: space-between;
-    grid-row: 1 / 2;
+    padding: 5px 20px;
+}
+
+.secondary-header {
+    grid-row: 2 / -1;
+    display: flex;
+    align-items: center;
+
 }
 
 .account, .search-bar {
     display: flex;
     align-items: center;
-    padding: 20px;
     align-items: center;
+    gap: 20px;
 
 }
 
@@ -26,6 +35,10 @@
     justify-content: flex-end;
     margin: 0 auto;
     gap: 20px;
+}
+
+img.big.profile-img {
+    height: 50px;
 }
 
 .header img {
@@ -54,9 +67,15 @@
     margin-top: 0;
 }
 
-.greeting img {
-    height: 50px;
+.greeting p {
+    margin: 0px;
+}
+
+.profile-img {
+    padding: 10px;
     margin-right: 20px;
+    background-color: yellow;
+    border-radius: 100px;
 }
 
 .btn-group {
