@@ -1,0 +1,31 @@
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+div.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr;
+    background-color: aquamarine;
+    max-height: 100vh;
+}
+
+.header {
+    background-color: green;
+    grid-row: 1 / 2;
+    grid-column: 2 / -1;
+}
+
+div.sidebar {
+    background-color: blue;
+    grid-row: 1 / -1;
+    grid-column: 1 / 2;
+}
+
+div.main {
+    background-color: red;
+    grid-row: 2 / -1;
+    grid-column: 2 / -1;
+}
